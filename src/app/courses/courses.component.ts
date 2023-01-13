@@ -10,13 +10,14 @@ export class CoursesComponent implements OnInit {
 
   title = 'Ceci est notre premier composant affichage grace à interpolation';
   ma_valeur = 'valeur initial';
-  @Input() contenue! : Course
-  //Avec 
+  
+  @Input() contenue! : Course //Ici , il est important de spécifier le type de contenu .
+  //Note le ! qui permet, en mode strict, que le contenu ne soit pas  initialisé lors de sa création
 
-  UE: Course[] = [
-    { titre:'C1', nb_eud: 2},
-    { titre:'C2', nb_eud: 5},
-  ]
+  //Avec des @Input, on indique que, dans le HTML du parent,
+  //on va binder la propriété "contenu" de <appcourse>. Cela 
+  //permettra à la classe CourseComponent de recevoir les informations dont 
+  //elle a besoin pour s'afficher correctement
 
   constructor() { }
 
