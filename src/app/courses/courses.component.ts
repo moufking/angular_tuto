@@ -11,7 +11,7 @@ export class CoursesComponent implements OnInit {
   title = 'Ceci est notre premier composant affichage grace à interpolation';
   ma_valeur = 'valeur initial';
   
-  @Input() contenue! : Course //Ici , il est important de spécifier le type de contenu .
+  @Input() contenue!: Course //Ici , il est important de spécifier le type de contenu .
   //Note le ! qui permet, en mode strict, que le contenu ne soit pas  initialisé lors de sa création
 
   //Avec des @Input, on indique que, dans le HTML du parent,
@@ -26,6 +26,10 @@ export class CoursesComponent implements OnInit {
   }
   modifTitle() {
     this.title = "nouveau titre";
+  }
+
+  updateNb() {
+
   }
   ngOnInit(): void {
   }
