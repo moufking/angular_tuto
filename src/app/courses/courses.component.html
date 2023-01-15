@@ -3,4 +3,13 @@
 <input type="text" (click)="modifTitle()" [(ngModel)]="title">  <!-- Event Binding-->
 <p>{{contenue.titre}} --- {{contenue.nb_eud}} étudiants</p>
 
-<input name="{{contenue.titre}}" [(ngModel)]="contenue.nb_eud"  (change)="updateNb()"/>
+
+<h1>Formumlaire</h1>
+<div class="row">
+    <div class="col-4">
+        <input  class="form-control" name="{{contenue.titre}}" [(ngModel)]="contenue.nb_eud"  (change)="updateNb()"/>
+    </div>
+    <div class="col-4">
+        <input  class="form-control" name="{{contenue.titre}}" [(ngModel)]="contenue.nb_eud"  (change)="updateNb()"/>
+    </div>
+</div>

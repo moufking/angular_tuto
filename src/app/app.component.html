@@ -1,3 +1,2 @@
 <h1>{{title}}</h1>
-<app-courses [contenue] = "UE[0]"></app-courses>
-<app-courses [contenue] = "UE[1]"></app-courses>
+<app-courses *ngFor="let cours of UE" [contenue] = "cours"></app-courses>

@@ -29,6 +29,7 @@ export class CoursesComponent implements OnInit {
   }
 
   updateNb() {
+    console.log('Voir les information')
 
   }
   ngOnInit(): void {
